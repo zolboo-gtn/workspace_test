@@ -1,0 +1,11 @@
+{
+  "name": "gtnjob",
+  "private": "true",
+  "scripts": {
+    "predev": "pnpm --filter @gtnjob/prisma db:generate",
+    "dev": "pnpm --filter next_app dev",
+    "prebuild": "pnpm --filter @gtnjob/prisma db:generate",
+    "build": "pnpm --stream -r build",
+    "start": "pnpm --stream -r start"
+  }
+}
